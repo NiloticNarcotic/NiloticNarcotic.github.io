@@ -1,42 +1,80 @@
 <!DOCTYPE HTML>
 <html>
     <style>
+        body {
+            background-image: url(https://cdn.discordapp.com/attachments/900555433490665513/933232419467845693/menace.jpg);
+        }
+        #background-tint {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 1920px;
+            height: 1080px;
+            background: linear-gradient(30deg,black,red,blue);
+            border-radius: 0px;
+            opacity: 40%;
+            z-index: -3;
+        }
         #header1 {
             display: flex;
             align-items: initial;
             justify-content: center;
+            z-index: 1;
         }
-        #img1 {
+        .img1 {
             width: 300px;
             display: flex;
-            align-content: initial;
-            justify-content: initial;
+            float: right;
+            padding-left: 76px;
+            border-radius: 1.5%
         }
         #header2 {
             display: flex;
             align-items: initial;
             justify-content: center;
+            z-index: 1;
         }
         h1 {
-            color: green
+            color: green;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            z-index: 1;
+            animation-name: scrolling-1;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
         }
-        h2 {
-            color: green
+        @keyframes scrolling-1 {
+            0% {
+                position: relative;
+                right: 1080px;
+            }
+            100% {
+                position: relative;
+                left: -1080px;
+            }
         }
         h3 {
-            color: green
+            color: green;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            z-index: 1;
         }
         p {
             color:green;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            z-index: 1;
         }
     </style>
   <head>
     <meta charset="utf-8">
     <body>
+        <div id="background-tint"></div>
         <title>Monday Night MANIA!!</title>
         <h1 id="header1">Welcome to the site!!</h1>
         <h3 id="header2">Gaming is my passion</h3>
-        <img id="img1" src="https://media.discordapp.net/attachments/822572927571722240/915343088287907850/unknown.png" alt="This is so awesome">
+        <img class="img1" src="https://media.discordapp.net/attachments/822572927571722240/915343088287907850/unknown.png" alt="This is so awesome">
+        <img class="img1" src="https://cdn.discordapp.com/attachments/734279359136792641/933366740753207366/1642179195390.gif" alt="I love dewalt">
     </body>
 </html>
+
